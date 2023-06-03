@@ -34,13 +34,14 @@ final class RMTabViewController: UITabBarController {
         let navigationThird = UINavigationController(rootViewController: episodeVC)
         let navigationFourth = UINavigationController(rootViewController: settingsVC)
         
-        navigationFirst.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person"), tag: 1)
-        navigationSecond.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "globe"), tag: 2)
-        navigationThird.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "tv"), tag: 3)
-        navigationFourth.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "gear"), tag: 4)
+        navigationFirst.tabBarItem = UITabBarItem(title: "Character", image: UIImage(systemName: "person"), tag: 1)
+        navigationSecond.tabBarItem = UITabBarItem(title: "Location", image: UIImage(systemName: "globe"), tag: 2)
+        navigationThird.tabBarItem = UITabBarItem(title: "Episode", image: UIImage(systemName: "tv"), tag: 3)
+        navigationFourth.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 4)
         
         for nav in [navigationFirst,navigationSecond,navigationThird,navigationFourth] {
             nav.navigationBar.prefersLargeTitles = true
+            
         }
         
         setViewControllers(
